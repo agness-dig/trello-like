@@ -1,0 +1,444 @@
+@font-face {
+    font-family: "Gotham";
+    src: url(../../assets/fonts/Gotham/GothamBook.woff);
+    src: url(../../assets/fonts/Gotham/GothamLight.woff);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Gotham", sans-serif;
+    margin: 0;
+    height: 100%;
+}
+
+header {
+    background-color: #8ecae6;
+    height: 13%;
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#container-of-everything {
+    display: flex;
+    height: 74%;
+}
+
+
+/*------------------SIDE BAR---------------------- */
+
+#side-bar {
+    width: 15%;
+    box-shadow: 3px 0px 7px #9e9e9e;
+}
+
+img {
+    width: 1%;
+}
+
+#logo {
+    width: 10%;
+    padding-top: 0.5%;
+    padding-left: 3em;
+}
+
+#nav-link {
+    width: 100%;
+    margin-right: 8em;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link {
+    padding-right: 2em;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+}
+
+.nav-link:hover {
+    text-decoration: underline white;
+}
+
+.nav-link:active {
+    text-decoration: underline white;
+}
+
+.nav-img {
+    width: 1.2em;
+    padding-right: 0.5em;
+}
+
+#button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background-color: #4ad295;
+    height: 2.5em;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 0 1em 0 1em;
+    margin: 0;
+    cursor:pointer;
+}
+
+#img-button {
+    padding-right: 0.5em;
+    color: white;
+    font-size: 1.8em;
+}
+
+#title-projet-side-bar {
+    background-color: #c0e8fa;
+    margin: 0;
+    height: 1.7em;
+    font-weight: bold;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-list {
+    height: 2.5em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1em;
+    cursor:pointer;
+}
+
+ul {
+    margin: 0;
+}
+
+.project-list:hover {
+    font-weight: bold;
+    background-color: #f5f5f5;
+}
+
+.project-list:active {
+    background-color: #f5f5f5;
+}
+
+#link_list {
+    text-decoration: none;
+    color: black;
+    cursor:pointer;
+}
+
+
+/*------------------HEADER OF MAIN PART WITH BUTTON ---------------------- */
+
+#project {
+    width: 85%;
+    height: 100%;
+}
+
+#title {
+    background-color: #219ebc;
+    height: 17.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 2em;
+    width: 10em;
+    margin-left: 1em;
+}
+
+.button-project {
+    width: 200px;
+    height: 40px;
+    font-weight: bold;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    margin-right: 2.5em;
+    padding-top: 1%;
+    padding-left: 1em;
+    padding-right: 0.5em;
+    font-size: 1.2em;
+    cursor:pointer;
+}
+
+.img-button-project {
+    margin-right: 0.5em;
+}
+
+#img-calendar {
+    width: 1em;
+}
+
+#button-project__second-lign {
+    padding-right: 0px;
+    width: 150px;;
+}
+
+
+/*------------------START OF MAIN PART---------------------- */
+
+.container-project {
+    background-color: #e5e5e5;
+    height: 79%;
+    padding-left: 3%;
+    padding-top: 2%;
+    flex-grow: 1;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    white-space: nowrap;
+}
+
+
+/*-------------------------HOME PAGE---------------------------*/ 
+
+
+.homepage{
+    background-color: #e5e5e5;
+}
+
+.homepage h1{
+    margin-left: auto;
+    width: auto;
+}
+
+table{
+    width: 100%;
+    height: 310px;
+    position: relative;
+    margin-left: 40px;
+    padding: 10px;
+   
+}
+
+tr{
+    margin-top: 40px;
+
+}
+
+td{
+    padding: 20px;
+
+}
+
+.paragraph{
+    width: 50%;
+    margin-left: 30px;
+    padding: 20px;
+}
+
+.homeimg{
+    background-size: cover;
+    width: 40%;
+    height: 300px;
+}
+.homeimg .image{
+    object-fit: cover;
+    width: 600px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5%;
+}
+
+.image{
+    width: auto;
+    height: auto;
+}
+
+.demo{
+    height: 600px;
+    width: 100%;
+    padding-top: 100px;
+    background-color: #8ecae6;
+    text-align: center;
+}
+
+.demo h1{
+   text-align: center;
+}
+
+
+
+/*------------------TITLE LIST "TO DO/DOING/ETC"---------------------- */
+
+.list-container {
+    background-color: #fb8500;
+    width: 350px;
+    margin-right: 1em;
+    height: 95%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: inline-block;
+    flex: 0 0 auto;
+    position: relative;
+}
+
+.list-title {
+    background-color: #cd6d02;
+    height: 2em;
+    color: white;
+    font-size: 2em;
+    padding-bottom: 0.5em;
+}
+
+.header-list-title {
+    text-align: center;
+    padding-top: 0.5em;
+    margin: 0;
+}
+
+.title-draw {
+    font-size: 0.6em;
+    color: black;
+    position: relative;
+    top: -25px;
+    right: -310px;
+    cursor: pointer;
+}
+
+
+/*------------------CARD---------------------- */
+
+.card {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: white;
+    height: 8rem;
+    padding: 1em;
+    box-shadow: 2px 2px 5px rgb(126, 126, 126), -2px 3px 5px rgb(126, 126, 126);
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.card p {
+    padding-top: 1em;
+}
+
+.remove {
+    font-size: 1.2em;
+    position: relative;
+    top: -37px;
+    left: 255px;
+    color: black;
+    background: #fafafa; 
+    box-shadow: 0 2px 2px rgba(123,123,123,0.4);
+    border-radius: 5px; 
+    width: 30px;
+    height: 25px;
+    font-size: 28px; 
+    line-height: 25px; 
+    right: 5px; 
+    text-align: center;
+    cursor: pointer;
+}
+
+.add {
+    font-size: 1.2em;
+    position: relative;
+    top: -40px;
+    left: 250px;
+    color: black;
+    background: #fafafa; 
+    box-shadow: 0 2px 2px rgba(123,123,123,0.4);
+    border-radius: 5px; 
+    width: 30px;
+    height: 22px;
+    font-size: 20px; 
+    line-height: 20px; 
+    right: 5px; 
+    text-align: center;
+    cursor: pointer;
+}
+
+.add-card-div {
+    background-color: #cd6d02;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    cursor: pointer;
+}
+
+.add-card {
+    text-decoration: none;
+    color: white;
+    display: block;
+    flex: 1 0 auto;
+}
+
+.plus {
+    color: white;
+    padding-right: 1em;
+}
+
+}
+
+.hold{
+  border: 3px solid #FF6B35;
+}
+
+.hovered{
+    background: #F7C59F;
+  }
+
+
+/*------------------FOOTER---------------------- */
+
+footer {
+    background-color: #023047;
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+    height: 8.7%;
+    padding: 1.5em 6em 1em 6em;
+}
+
+#footer-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#left-side {
+    display: flex;
+    flex-direction: row;
+}
+
+#left-side>ul>li {
+    padding-right: 10rem;
+    line-height: 1.5em;
+}
+
+.footer-link-all {
+    text-decoration: none;
+    color: white;
+}
+
+#social-group {
+    align-items: center;
+}
+
+.fa-facebook-f,
+.fa-github,
+.fa-youtube {
+    padding-right: 2em;
+}
+
+footer p {
+    text-align: center;
+}
