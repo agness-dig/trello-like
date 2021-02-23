@@ -2,7 +2,7 @@
 
     var today = moment();
   
-    function Calendar(selector, events) {
+    function calendar(selector, events) {
       this.el = document.querySelector(selector);
       this.events = events;
       this.current = moment().date(1);
