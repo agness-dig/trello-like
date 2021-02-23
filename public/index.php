@@ -43,6 +43,9 @@ $router->map( 'GET',  '/',           '\App\Controllers\MainController::home',   
 /*----------- ARRAY PAGE ----------------- */
 
 $router->map( 'GET',  '/array',           '\App\Controllers\ArrayController::display',    'array-display');
+$router->map( 'GET',  '/array',           '\App\Controllers\ArrayController::doingCard',  'array-doingCard');
+$router->map( 'GET',  '/array',           '\App\Controllers\ArrayController::doneCard',  'array-doneCard');
+$router->map( 'GET',  '/array',           '\App\Controllers\ArrayController::todoCard',  'array-todoCard');
 
 /* -------------
 --- DISPATCH ---

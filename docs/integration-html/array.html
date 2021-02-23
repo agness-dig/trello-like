@@ -35,7 +35,7 @@
         <div class="container-div" id="project">
             <div id="title">
                 <h1>Projet 1</h1>
-                <p onclick="editth(this.parentNode)" onchange="editth(this.parentNode)" class="button-project"><i class="fas fa-plus img-button-project"></i> Ajouter une liste</p>
+                <p onclick="edit(this.parentNode)" onchange="edit(this.parentNode)" class="button-project"><i class="fas fa-plus img-button-project"></i> Ajouter une liste</p>
                 <p class="button-project" id="button-project__second-lign"><img class="img-button-project" id="img-calendar" src="../../public/assets/images/calendar.png"> Calendrier</p>
             </div>
 
@@ -44,17 +44,17 @@
                 <div class="list-container">
                     <div class="list-title">
                         <h2 class="header-list-title">À faire </h2>
-                        <p onclick="editth(this.parentNode)" onchange="editth(this.parentNode)"><i class="fas fa-pen title-draw"></i></p>
+                        <p onclick="edit(this.parentNode)" onchange="edit(this.parentNode)"><i class="fas fa-pen title-draw"></i></p>
                     </div>
                     <div class="add-card-div" onclick="add(this)">
                         <i class="fas fa-plus plus"></i><p class="add-card">Ajouter une carte</p> 
                     </div>
 
-                    <div class="card draggable dragging" draggable="true">
-                        <h3 onclick="editth(this.parentNode)">Nom de la tâche</h3>
-                        <p class="x" onclick="editth(this.parentNode)" onchange="editth(this.parentNode)"></p>
+                    <div class="draggable" draggable="true">
+                        <h3 onclick="edit(this.parentNode)">Nom de la tâche</h3>
+                        <p class="x" onclick="edit(this.parentNode)" onchange="edit(this.parentNode)"></p>
                         <div class="remove" onclick="removeth(this)">x</div>
-                        <i class="fas fa-pen card-pen" onclick="editth(this)"></i>
+                        <i class="fas fa-pen card-pen" onclick="edit(this)"></i>
                     </div>
                     
                 </div>
@@ -62,17 +62,17 @@
                 <div class="list-container">
                     <div class="list-title">
                         <h2 class="header-list-title">À faire </h2>
-                        <p onclick="editth(this.parentNode)" onchange="editth(this.parentNode)"><i class="fas fa-pen title-draw"></i></p>
+                        <p onclick="edit(this.parentNode)" onchange="edit(this.parentNode)"><i class="fas fa-pen title-draw"></i></p>
                     </div>
                     <div class="add-card-div" onclick="add(this)">
                         <i class="fas fa-plus plus"></i><p class="add-card">Ajouter une carte</p> 
                     </div>
 
-                    <div class="card draggable" draggable="true">
-                        <h3 onclick="editth(this.parentNode)">Nom de la tâche</h3>
-                        <p class="x" onclick="editth(this.parentNode)" onchange="editth(this.parentNode)"></p>
+                    <div class="draggable" draggable="true">
+                        <h3 onclick="edit(this.parentNode)">Nom de la tâche</h3>
+                        <p class="x" onclick="edit(this.parentNode)" onchange="edit(this.parentNode)"></p>
                         <div class="remove" onclick="removeth(this)">x</div>
-                        <i class="fas fa-pen card-pen" onclick="editth(this)"></i>
+                        <i class="fas fa-pen card-pen" onclick="edit(this)"></i>
                     </div>
                     
                 </div>

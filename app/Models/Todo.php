@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Models;
+use App\Utils\Database;
+use PDO;
 
 class Todo extends CoreModel {
 
@@ -109,5 +111,17 @@ class Todo extends CoreModel {
         $this->checkTodo = $checkTodo;
 
         return $this;
+    }
+
+    public function findAll()
+    {
+        $sql = '
+        SELECT *
+        FROM `todo`
+        ';
+        $pdo = Database::getPDO();
+        $pdoStatement = $pdo->query($sql);
+        $results = $pdoStatement->fetchAll(PDO::FETCH_CLASS, self::class);
+        return $results;
     }
 }

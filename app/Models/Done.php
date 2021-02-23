@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Models;
+use App\Utils\Database;
+use PDO;
 
 class Done extends CoreModel {
 
@@ -109,5 +111,17 @@ class Done extends CoreModel {
         $this->checkDone = $checkDone;
 
         return $this;
+    }
+
+    public function findAll()
+    {
+        $sql = '
+        SELECT *
+        FROM `done`
+        ';
+        $pdo = Database::getPDO();
+        $pdoStatement = $pdo->query($sql);
+        $results = $pdoStatement->fetchAll(PDO::FETCH_CLASS, self::class);
+        return $results;
     }
 }

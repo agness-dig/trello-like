@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Models;
+use App\Utils\Database;
+use PDO;
 
 class Doing extends CoreModel {
 
@@ -110,4 +112,15 @@ class Doing extends CoreModel {
 
         return $this;
     }
+
+    public function findAll(){
+        $sql = '
+        SELECT *
+        FROM `doing`
+        ';
+        $pdo = Database::getPDO();
+        $pdoStatement = $pdo->query($sql);
+        $results = $pdoStatement->fetchAll(PDO::FETCH_CLASS, self::class);
+        return $results;
+        }
 }
