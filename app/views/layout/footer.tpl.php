@@ -3,7 +3,7 @@
     <div id="footer-link">
         <div id="left-side">
             <ul>
-                <li><a class="footer-link-all" href="">mentions légales</a></li>
+                <li><a class="footer-link-all" href="<?= $router->generate('main-legal') ?>">mentions légales</a></li>
                 <li><a class="footer-link-all" href="">confidentialité</a></li>
                 <li><a class="footer-link-all" href="">cgu</a></li>
             </ul>

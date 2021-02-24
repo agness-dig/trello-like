@@ -26,8 +26,8 @@
                         <i class="fas fa-plus plus"></i><p class="add-card">Ajouter une carte</p> 
                     </div>
                     <div class="card draggable dragging" draggable="true">
-                        <h3 class="edit" contenteditable="true"></h3>
-                        <p class="edit" contenteditable="true"></p>
+                        <h3 class="edit" contenteditable="true">Nom de la tâche</h3>
+                        <p class="edit" contenteditable="true">Description de la tâche</p>
                         <i class="fas fa-times remove"  onclick="removeth(this)"></i>
                     </div>
                 </div>
@@ -41,8 +41,8 @@
                     </div>
 
                     <div class="card draggable dragging" draggable="true">
-                        <h3 class="edit" contenteditable="true"></h3>
-                        <p class="edit" contenteditable="true"></p>
+                        <h3 class="edit" contenteditable="true">Nom de la tâche</h3>
+                        <p class="edit" contenteditable="true">Description de la tâche</p>
                         <i class="fas fa-times remove"  onclick="removeth(this)"></i>
                     </div>
 
@@ -57,8 +57,8 @@
                     </div>
 
                     <div class="card draggable dragging" draggable="true">
-                        <h3 class="edit" contenteditable="true"></h3>
-                        <p class="edit" contenteditable="true"></p>
+                        <h3 class="edit" contenteditable="true">Nom de la tâche</h3>
+                        <p class="edit" contenteditable="true">Description de la tâche</p>
                         <i class="fas fa-times remove"  onclick="removeth(this)"></i>
                     </div>  
                 </div>

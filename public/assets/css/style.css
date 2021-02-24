@@ -87,7 +87,7 @@ img {
     font-size: 1em;
     padding: 0 1em 0 1em;
     margin: 0;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 #img-button {
@@ -113,7 +113,7 @@ img {
     justify-content: flex-end;
     align-items: center;
     padding-right: 1em;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 ul {
@@ -132,7 +132,7 @@ ul {
 #link_list {
     text-decoration: none;
     color: black;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 
@@ -170,7 +170,7 @@ h1 {
     padding-left: 1em;
     padding-right: 0.5em;
     font-size: 1.2em;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .img-button-project {
@@ -183,7 +183,8 @@ h1 {
 
 #button-project__second-lign {
     padding-right: 0px;
-    width: 150px;;
+    width: 150px;
+    ;
 }
 
 
@@ -200,10 +201,6 @@ h1 {
     display: flex;
     white-space: nowrap;
 }
-
-
-
-
 
 
 /*------------------TITLE LIST "TO DO/DOING/ETC"---------------------- */
@@ -269,14 +266,14 @@ h3 {
     top: -37px;
     left: 255px;
     color: black;
-    background: #fafafa; 
-    box-shadow: 0 2px 2px rgba(123,123,123,0.4);
-    border-radius: 5px; 
+    background: #fafafa;
+    box-shadow: 0 2px 2px rgba(123, 123, 123, 0.4);
+    border-radius: 5px;
     width: 30px;
     height: 25px;
-    font-size: 28px; 
-    line-height: 25px; 
-    right: 5px; 
+    font-size: 28px;
+    line-height: 25px;
+    right: 5px;
     text-align: center;
     cursor: pointer;
 }
@@ -287,14 +284,14 @@ h3 {
     top: -40px;
     left: 250px;
     color: black;
-    background: #fafafa; 
-    box-shadow: 0 2px 2px rgba(123,123,123,0.4);
-    border-radius: 5px; 
+    background: #fafafa;
+    box-shadow: 0 2px 2px rgba(123, 123, 123, 0.4);
+    border-radius: 5px;
     width: 30px;
     height: 22px;
-    font-size: 20px; 
-    line-height: 20px; 
-    right: 5px; 
+    font-size: 20px;
+    line-height: 20px;
+    right: 5px;
     text-align: center;
     cursor: pointer;
 }
@@ -320,15 +317,13 @@ h3 {
     padding-right: 1em;
 }
 
+.hold {
+    border: 3px solid #FF6B35;
 }
 
-.hold{
-  border: 3px solid #FF6B35;
-}
-
-.hovered{
+.hovered {
     background: #F7C59F;
-  }
+}
 
 
 /*------------------FOOTER---------------------- */
@@ -377,45 +372,47 @@ footer p {
     text-align: center;
 }
 
-/*-------------------------HOME PAGE---------------------------*/ 
 
+/*-------------------------HOME PAGE---------------------------*/
 
-.homepage{
+.homepage {
     background-color: #e5e5e5;
 }
 
-.homepage h1{
+.homepage h1 {
     margin-left: auto;
     width: auto;
 }
-table{
+
+table {
     width: 100%;
     height: 310px;
     position: relative;
     margin-left: 40px;
     padding: 10px;
-   
 }
-tr{
+
+tr {
     margin-top: 40px;
-
 }
-td{
+
+td {
     padding: 20px;
-
 }
-.paragraph{
+
+.paragraph {
     width: 50%;
     margin-left: 30px;
     padding: 20px;
 }
 
-.homeimg{
+.homeimg {
     background-size: cover;
     width: 40%;
     height: 300px;
 }
-.homeimg .image{
+
+.homeimg .image {
     object-fit: cover;
     width: 600px;
     height: 300px;
@@ -424,18 +421,130 @@ td{
     border-radius: 5%;
 }
 
-.image{
+.image {
     width: auto;
     height: auto;
 }
 
-.demo{
+.demo {
     height: 600px;
     width: 100%;
     padding-top: 100px;
     background-color: #8ecae6;
     text-align: center;
 }
-.demo h1{
-   text-align: center;
+
+.demo h1 {
+    text-align: center;
+}
+
+
+/*------------------------lEGAL NOTICE-------------------------*/
+
+.legal h1 {
+    margin-left: auto;
+    width: auto;
+}
+
+.legal {
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#privacy {
+    margin-top: 50px;
+}
+
+#login-body {
+    height: 73%;
+    background: #e5e5e5;
+}
+
+.box {
+    border: 1px solid #c4c4c4;
+    padding: 30px 25px 10px 25px;
+    background: white;
+    margin: 30px auto;
+    width: 360px;
+}
+
+h1.box-logo a {
+    text-decoration: none;
+}
+
+h1.box-title {
+    color: #AEAEAE;
+    background: #f8f8f8;
+    font-weight: 300;
+    padding: 15px 25px;
+    line-height: 30px;
+    font-size: 25px;
+    text-align: center;
+    margin: -27px -26px 26px;
+}
+
+.box-button {
+    border-radius: 5px;
+    background: #8ecae6;
+    text-align: center;
+    cursor: pointer;
+    font-size: 19px;
+    width: 100%;
+    height: 51px;
+    padding: 0;
+    color: #fff;
+    border: 0;
+    outline: 0;
+}
+
+.box-register {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.box-register a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #dc3c61;
+}
+
+.box-input {
+    font-size: 14px;
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 25px;
+    padding-left: 10px;
+    border-radius: 5px;
+    width: 347px;
+    height: 50px;
+}
+
+.box-input:focus {
+    outline: none;
+    border-color: #5c7186;
+}
+
+.sucess {
+    text-align: center;
+    color: white;
+}
+
+.sucess a {
+    text-decoration: none;
+    color: #58aef7;
+}
+
+p.errorMessage {
+    background-color: #8ecae6;
+    border: #8ecae6 1px solid;
+    padding: 5px 10px;
+    color: #FFFFFF;
+    border-radius: 3px;
+}
+
+.Accueil {
+    color: white;
+    font-size: 2em;
+    margin: auto;
 }

@@ -12,6 +12,36 @@ class User extends CoreModel {
     private $email;
     private $identifier;
     private $pseudo;
+    private $password;
+
+    public function insert() {
+
+        $pdo = Database::getPDO();
+        $sql = "
+                INSERT INTO `user` (email, password, pseudo)
+                VALUES (:email, :password, :pseudo)";
+        $query = $pdo->prepare($sql);
+        $insertedRows = $query->execute( [
+            ":email" => $this->email,
+            ":password" => $this->password,
+            ":pseudo" => $this->pseudo,
+        ]);
+
+        if ($insertedRows > 0) {
+            $this->id = $pdo->lastInsertId();
+            return true;
+        }
+        return false;
+    }
+
+    public static function findByEmail( string $email )
+    {
+        $pdo = Database::getPDO();
+        $sql = 'SELECT * FROM `user` WHERE `email` = :email';
+        $pdoStatement = $pdo->prepare($sql);
+        $pdoStatement->execute([ ':email' => $email ]);
+        return $pdoStatement->fetchObject(self::class);
+    }
 
     /**
      * Get the value of id_user
@@ -131,5 +161,24 @@ class User extends CoreModel {
         $this->pseudo = $pseudo;
 
         return $this;
+    }
+
+    /**
+     * Get the value of password
+     */ 
+    public function getPassword()
+    {
+        return $this->password;
+    }
+
+    /**
+     * Set the value of password
+     *
+     * @return  self
+     */ 
+    public function setPassword($password)
+    {
+        $this->password = password_hash( $password, PASSWORD_DEFAULT );        
+        return $this;  
     }
 }
